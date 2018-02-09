@@ -17,7 +17,6 @@
 	      $('html, body').animate({
 	        scrollTop: $(hash).offset().top
 	      }, 800, function(){
-
 	        window.location.hash = hash;
 	      });
 	    }
@@ -34,7 +33,6 @@
 			height:100%;
 		}
 		hr {
-
 		    height: 2px;
 		    width:800px;
 		    color: white;
@@ -124,7 +122,6 @@
 			text-shadow:0px 4px 3px rgba(0,0,0,0.4);
 			            0px 8px 13px rgba(0,0,0,0.1),
 			            0px 18px 23px rgba(0,0,0,0.1);
-
 		}
 		.hln {
 		    border-radius: 25px;
@@ -174,7 +171,6 @@
 		table.jk2{
 			margin-right:auto;
 			margin-left:auto;
-
 		}
 		hr.jk22{
 			width:100%;
@@ -202,7 +198,6 @@
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
-
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav mr-auto">
 		      <li class="nav-item active">
@@ -301,7 +296,6 @@
 		</div>
 	</div>
 </div>				
-
 	<div class="sect sectOne" id='content'>
 		<div id='content1'
 			<h1>JiTest</h1>
@@ -374,7 +368,6 @@
 	   						<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="4" width='200px'></textarea>
 	  					</div>
 	  				</p>		
-
 	  			</td>		
 	  		</table>
 	  		<button type="button" class="btn btn-dark esh">Send</button>
