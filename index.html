@@ -58,8 +58,13 @@
 		.sectOne{
 			background: url(https://www.retailnews.asia/wp-content/uploads/2017/01/Game-Developper.jpg);
 			background-attachment:fixed;
+			background-repeat:no-repeat;
+			background-size:cover;
+			margin-top:60px;
 		}
-		#content1{
+
+		#klk {
+
 			color:white;
 			font-family:Lato;
 			font-weight:700;
@@ -67,19 +72,38 @@
 			text-shadow:0px 4px 3px rgba(0,0,0,0.4);
 			            0px 8px 13px rgba(0,0,0,0.1),
 			            0px 18px 23px rgba(0,0,0,0.1);
+            position: relative;
+            animation-name: klk;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
 		}
-		#content2{
+
+			@keyframes klk {
+			  0%   {top : -250px;}
+			  100% {top: 0px;}
+			}
+		#klkk{
 			color:white;
 			font-family:Lato;
 			font-weight:400;
 			font-size:1.5em;
+
 			text-shadow:0px 4px 3px rgba(0,0,0,0.4);
 			            0px 8px 13px rgba(0,0,0,0.1),
 			            0px 18px 23px rgba(0,0,0,0.1);
+			position:relative;            
+            animation-name: klkk;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
 		}
+
+			@keyframes klkk {
+			  0%   {left : -1000px;}
+			  100% {left: 0px;}
+			}
 		.subSect1{
 			background-color:#F0F8FF;
-			height:100%;
+			height:85%;
 			width:100%;
 			padding-top:60px;
 			padding-left:55px;
@@ -165,19 +189,6 @@
 		}
 		.hn{
 			margin:auto;
-			padding-top:40px;
-			padding-left:330px;
-		}
-		td.jk1{
-			padding-bottom:60px;
-		}
-		table.jk2{
-			margin-right:auto;
-			margin-left:auto;
-
-		}
-		hr.jk22{
-			width:100%;
 		}
 		.subSect3{
 			width:100%;
@@ -187,11 +198,37 @@
 			text-align:center;
 			font-size:0.9em;
 		}
-		p.jk3{
-			padding-top:5px;
+		table.hk{
+			margin:auto;
+			margin-top:30px;
 		}
-		.esh{
-			margin-left:250px;
+		td.jk1{
+			padding-bottom:95px;
+		}
+		p.jk3{
+			padding-top:10px;
+		}
+		table.jk2{
+			margin-right:auto;
+			margin-left:auto;
+		}
+		.btn{
+			opacity: 0;
+			animation-name: btn;
+			animation-duration:3s;
+			animation-delay:2s;
+			transition-property: transform;
+			transition-duration: 1s;
+			animation-fill-mode:forwards;
+
+		}
+		.btn:hover{
+			transform:rotateY(180deg);
+		}
+		@keyframes btn{
+			0%{opacity:0;}
+			100%{opacity:1;}
+		}
 	</style>
 	<title>JiTest</title>
 </head>
@@ -303,10 +340,10 @@
 </div>				
 
 	<div class="sect sectOne" id='content'>
-		<div id='content1'
+		<div id='klk'>
 			<h1>JiTest</h1>
 		</div>	
-		<div id='content2'>
+		<div id='klkk'>
 			<h3>Welcome to the world's most reputable Game Testing platform!</h3>
 		</div>	
 		<hr>
@@ -317,19 +354,19 @@
 		<table cellpadding='55px' class='jk'>
 			<tr>
 				<td>
-					<p>
+					<p id='klkkk'>
 						<img src='http://www.sticker.com/picture_library/product_images/award-ribbons/72430_1st-first-place-award-ribbon-stickers-and-labels.png' height='250px' width='250px'>
 					</p>
 					<h3 class='helv1'>1st place in Geneva Testing Masters (GTM)</h3>	
 				</td>	
 				<td>
-					<p>
+					<p id='klkkk1'>
 						<img src='http://www.homerunderbyus.com/images/2nd.png' height='250px' width='250px'>
 					</p>
 					<h3 class='helv1'>2nd place in Indian's Gamers Lounge (IGL)</h3>	
 				</td>
 				<td>
-					<p>
+					<p id='klkkk2'>
 						<img src='https://www.sticker.com/picture_library/product_images/award-ribbons/72440_3rd-third-place-award-ribbon-stickers-and-labels.png' height='250px' width='250px'>
 					</p>
 					<h3 class='helv1'>3rd place in World's Game Testing Olympics (WGTO)</h3>
@@ -346,7 +383,7 @@
 		<div class='box'><h1 class='helv4'>GET IN TOUCH!
 		</h3></div>
 		<div class='hn'>
-			<table cellpadding='10px'>
+			<table cellpadding='10px' class='hk'>
 				<td class='jk1'>
 					<p>500 Terry Francois Street San Francisco, CA 94158</p>
 					<p>info@mysite.com</p>
@@ -374,10 +411,10 @@
 	   						<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="4" width='200px'></textarea>
 	  					</div>
 	  				</p>		
-
+	  				<button type="button" class="btn btn-dark esh">Send</button>
 	  			</td>		
 	  		</table>
-	  		<button type="button" class="btn btn-dark esh">Send</button>
+
 	  	</div>				
 	</div>
 	<div class='subSect3'>
